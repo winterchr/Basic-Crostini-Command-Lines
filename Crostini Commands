@@ -1,5 +1,3 @@
-# A dump saves since i don't even use chrome os anymore after finding out i can just change any os so here are some of the command lines i learned. It's just a tiny list but who cares.
-
 Wine SetUp:
 sudo dpkg --add-architecture i386
 
