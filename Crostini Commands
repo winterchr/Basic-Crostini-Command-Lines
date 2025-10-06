@@ -1,0 +1,33 @@
+# A dump saves since i don't even use chrome os anymore after finding out i can just change any os so here are some of the command lines i learned. It's just a tiny list but who cares.
+
+Wine SetUp:
+sudo dpkg --add-architecture i386
+
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+
+sudo apt-key add winehq.key
+
+echo "deb https://dl.winehq.org/wine-builds/debian/ bullseye main" | sudo tee /etc/apt/sources.list.d/wine_chrome_os_made_simple.list
+
+sudo apt update -y
+
+sudo apt install --install-recommends winehq-stable
+
+winecfg
+
+Install File Manager:
+sudo apt install nemo
+
+Wine/Drive Directory:
+ln -s /home/$USER/.wine/drive_c /home/$USER/wine
+
+Cursor Size:
+vim ~/.bashrc
+
+export XCURSOR_SIZE=24
+
+Kmenuedit:
+sudo apt install kmenuedit fuse libnss3
+
+Device Info:
+lscpu
